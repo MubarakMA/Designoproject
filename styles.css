@@ -246,16 +246,17 @@ button:hover{
     background-repeat: no-repeat;
     background-position: bottom left, top right 20px;
     background-color: var(--deep-blue);
-    margin: 100px 100px 0 100px;
+    margin: 0px 20px 50px 20px;
     display: flex;
     flex-direction: row;
     gap: 40%;
     padding: 60px;
     border-radius: 30px;
     color: var(--white);
-    position: absolute;
-    bottom: 70%;
-    left: 7%;
+    /* position: absolute; */
+    /* bottom: 70%; */
+    /* left: 7%; */
+    margin-top: -200px;
 }
 .talk h3{
     font-size: var(--font-size-title);
@@ -270,7 +271,7 @@ footer{
     display: flex;
     flex-direction: column;
     background-color: var(--dark-grey);
-    padding: 150px 100px 50px 100px;
+    padding: 50px 100px 50px 100px;
 }
 .foothead{
     display: flex;
