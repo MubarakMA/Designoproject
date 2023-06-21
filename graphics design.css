@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --deep-blue: #1B4EBF;
+    --light-blue: #D8E4FE;
+    --black: #1D1C1E;
+    --dark-grey: #333136;
+    --white: #FFFFFF;
+    --light-gray: #F1F3F5;
+    --font-family: Jost;
+    --font-size-body:  16px;
+    --font-size-head: 30px;
+    --font-size-title: 40px;
+    --font-weight-head: 900;
+    --font-weight-title: 700;
+    --font-weight-body: 500;
+    --font-size-body-other: 14px
+}
+
+body{
+    /* padding: 40px 100px 0 100px; */
+    font-family: var(--font-family);
+}
+button{
+    background-color: var(--white);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    padding: 25px 35px;
+    font-size: 15px;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    font-weight: var(--font-size-title);
+    color: var(--dark-grey);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: var(--font-family);
+    margin: 40px 100px 40px 100px;
+
+}
+.menu-icon{
+    display: none;
+}
+.home-nav{
+    display: flex;
+    flex-direction: row;
+    font-size: var(--font-size-body);
+}
+.logo img{
+    /* width: 190px; */
+    width: 160px;
+}
+.home-nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--dark-grey);
+    text-transform: uppercase;
+}
+.home-nav a:hover{
+    text-decoration: underline;
+}
+
+.hero-section{
+    color: var(--white);
+    background-color: var(--deep-blue);
+    /* background-image: url('./Images/Oval.png');
+    background-repeat: no-repeat; */
+    text-align: center;
+    padding: 100px 200px;
+    border-radius: 30px;
+    /* width: 85%; */
+    margin: 0 100px 0 100px; 
+    font-size: var(--font-size-head);
+}
+.hero-section h1{
+    line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.hero-section p{
+    font-size: var(--font-size-body);
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* border:solid red; */
+    margin: 100px 100px 0 100px;
+}
+.card{
+    background-color: var(--light-blue);
+    border-radius: 20px;
+    text-align: center;
+}
+.img-container img{
+    border-radius: 20px 20px 10px 10px;
+}
+.card-text{
+    margin: 30px;
+}
+.card-text h3{
+    color: var(--deep-blue);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.card-text p{
+    color: #333136;
+}
+
+.design{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.design h3{
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+}
+.learn-more{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.app{
+    /* color: var(--white); */
+    /* background-image: url('./Images/App\ Design.png'); */
+    grid-area: app;
+    border-radius: 15px;
+    width: 100%;
+    min-height: 300px;
+    overflow: hidden;
+    /* object-fit:; */
+    
+}
+.graphic{
+    /* color: var(--white); */
+    /* background-image: url('./Images/Graphics\ design.png'); */
+    grid-area: graphic;
+    border-radius: 15px;
+    width: 100%;
+    min-height: 300px;
+    overflow: hidden;
+    /* object-fit: contain; */
+}
+.app img:nth-child(1){
+    min-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.graphic img:nth-child(1){
+    min-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.article{
+    position: absolute;
+    color: var(--white);
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-list{
+    display: grid;
+    /* grid-auto-columns: 1fr; */
+    gap: 30px;
+    grid-template-areas: 
+    'app graphic'
+    ;
+    margin: 100px 100px 350px 100px;
+}
+
+.talk-house{
+    position: relative;
+    /* align-items: center; */
+}
+.floating-talk{
+    background-image: url('./Images/float\ back.png'), url('./Images/float\ back\ 2.png');
+    background-repeat: no-repeat;
+    background-position: bottom left, top right 20px;
+    background-color: var(--deep-blue);
+    margin: 100px 100px 0 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 40%;
+    padding: 60px;
+    border-radius: 30px;
+    color: var(--white);
+    position: absolute;
+    bottom: 80%;
+    left: 7%;
+}
+.talk h3{
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+}
+.floating-talk button{
+    padding: 25px 10px;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-grey);
+    padding: 150px 100px 50px 100px;
+}
+.foothead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: var(--light-gray) solid 1px;
+    margin-bottom: 30px;
+}
+.foot-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.foot-nav a{
+    color: var(--white);
+    text-decoration: none;
+}
+.social-hover{
+    display: none;
+}
+.social-icons:hover{
+    display: none;
+}
+.social-icons:hover + .social-hover{
+    display: contents;
+}
+
+.contact-address-social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--light-gray);
+    align-items: center;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    header{
+        margin: 40px 30px 40px 30px;
+    }
+
+    .hero-section{
+        text-align: center;
+        padding: 100px 100px;
+        border-radius: 30px;
+        /* width: 85%; */
+        margin: 0 30px 0 30px;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* border:solid red; */
+        margin: 100px 30px 0 30px;
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    .img-container img{
+        border-radius: 20px 5px 5px 20px;
+        width: 100%;
+        height: 100%;
+    }
+    .img-container{
+        width: 50%;
+    }
+
+    .skill-list{
+        grid-template-areas:
+        'app'
+        'graphic'
+        ;
+        margin: 100px 30px 350px 30px;
+    }
+
+    .floating-talk{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        margin: 100px 30px 0 30px;
+        left: 0%;
+
+    }
+    .floating-talk h3{
+        margin-bottom: 20px;
+        line-height: 50px;
+    }
+}
+
+
+
+
+@media (max-width: 450px) {
+    header{
+        margin: 30px 17px;
+    }
+    .home-nav{
+        display: none;
+    }
+    .menu-icon{
+        display: contents;
+    }
+    .hero-section{
+        color: var(--white);
+        background-color: var(--deep-blue);
+        /* background-image: url('./Images/Oval.png');
+        background-repeat: no-repeat; */
+        text-align: center;
+        padding: 100px 50px;
+        border-radius: 0;
+        margin: 0 ;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-container img{
+        border-radius: 20px 20px 5px 5px;
+    }
+    .img-container{
+        width: 100%;
+    }
+    .card-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0px;
+        margin: 30px ;
+    }
+    .floating-talk{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        bottom: 83%;
+        padding: 40px;
+        margin: 100px 15px 0 15px;
+    }
+    .foothead{
+        flex-direction: column;
+        align-items: center;
+        border-bottom: none;
+        margin-bottom: 30px;
+    }
+    .foot-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .contact-address-social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    
+}
