@@ -246,7 +246,7 @@ button:hover{
     background-repeat: no-repeat;
     background-position: bottom left, top right 20px;
     background-color: var(--deep-blue);
-    margin: 0px 20px 50px 20px;
+    margin: 0px 20px 70px 20px;
     display: flex;
     flex-direction: row;
     gap: 40%;
@@ -256,7 +256,7 @@ button:hover{
     /* position: absolute; */
     /* bottom: 70%; */
     /* left: 7%; */
-    margin-top: -200px;
+    margin-top: -230px;
 }
 .talk h3{
     font-size: var(--font-size-title);
@@ -360,7 +360,7 @@ footer{
 
     .qualities{
         flex-direction: column;
-        margin: 100px 30px 300px 30px;
+        margin: 100px 30px 200px 30px;
     }
     .quality-box{
         flex-direction: row;
@@ -376,7 +376,9 @@ footer{
         flex-direction: column;
         gap: 40px;
         text-align: center;
-        margin: 100px 30px 0 30px;
+        margin: 0px 0px 70px 0px;
+        margin-top: -230px;
+
     }
     .floating-talk h3{
         margin-bottom: 20px;
