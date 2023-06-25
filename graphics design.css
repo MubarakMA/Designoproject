@@ -24,6 +24,7 @@
 body{
     /* padding: 40px 100px 0 100px; */
     font-family: var(--font-family);
+    /* background-image: url('./graphics\ design/'); */
 }
 button{
     background-color: var(--white);

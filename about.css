@@ -24,6 +24,9 @@
 body{
     /* padding: 40px 100px 0 100px; */
     font-family: var(--font-family);
+    background-image: url('./about/about-bg1.png'), url('./about/about-bg2.png');
+    background-repeat: no-repeat;
+    background-position: top left, center right;
 }
 
 header{
@@ -67,6 +70,14 @@ header{
 }
 .tp-two{
     flex-direction: row; 
+}
+.tp-one{
+    background-image: url('./about/aboutus-bg.png');
+    background-repeat: repeat;
+    background-position: center;
+}
+.tp-two{
+    background-image: url('./about/worl-class-bg.png');
 }
 .tp-two .img-container img{
     border-radius: 20px 5px 5px 20px;
@@ -123,8 +134,7 @@ header{
     letter-spacing: 5px;
     margin-bottom: 20px;
 }
-
-button{
+.quali button{
     border: none;
     color: var(--white);
     background-color: var(--deep-blue);
@@ -134,7 +144,7 @@ button{
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-button:hover{
+.quali button:hover{
     background-color: var(--light-blue);
 }
 

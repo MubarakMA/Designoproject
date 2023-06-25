@@ -24,6 +24,9 @@
 body{
     /* padding: 40px 100px 0 100px; */
     font-family: var(--font-family);
+    background-image: url('./web-design/Web\ bg1.png'), url('./web-design/Web\ bg2.png');
+    background-repeat: no-repeat;
+    background-position: center, top right;
 }
 button{
     background-color: var(--white);
@@ -80,6 +83,11 @@ header{
     /* width: 85%; */
     margin: 0 100px 0 100px; 
     font-size: var(--font-size-head);
+}
+.hero-section{
+    background-image: url('./web-design/Web\ bg2.png');
+    background-repeat: no-repeat;
+    background-position: top right;
 }
 .hero-section h1{
     line-height: 50px;
