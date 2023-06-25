@@ -65,8 +65,12 @@ header{
 .country-one, .country-three{
     flex-direction: row-reverse;
 }
+.country-three{
+    margin-bottom: 300px;
+}
 
 .location-text{
+    background-image: url('./locations/location1-bg.png');
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -109,6 +113,93 @@ header{
     color: var(--dark-grey);
 }
 
+.talk-house{
+    position: relative;
+    /* align-items: center; */
+}
+.floating-talk{
+    background-image: url('./Images/float\ back.png'), url('./Images/float\ back\ 2.png');
+    background-repeat: no-repeat;
+    background-position: bottom left, top right 20px;
+    background-color: var(--deep-blue);
+    margin: 0px 20px 70px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 40%;
+    padding: 60px;
+    border-radius: 30px;
+    color: var(--white);
+    /* position: absolute; */
+    /* bottom: 70%; */
+    /* left: 7%; */
+    margin-top: -230px;
+}
+.talk h3{
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+}
+.floating-talk button{
+    padding: 25px 10px;
+    background-color: var(--white);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    /* padding: 25px 35px; */
+    font-size: 15px;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    font-weight: var(--font-size-title);
+    color: var(--dark-grey);
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-grey);
+    padding: 50px 100px 50px 100px;
+}
+.foothead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: var(--light-gray) solid 1px;
+    margin-bottom: 30px;
+}
+.foot-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.foot-nav a{
+    color: var(--white);
+    text-decoration: none;
+}
+.social-hover{
+    display: none;
+}
+.social-icons:hover{
+    display: none;
+}
+.social-icons:hover + .social-hover{
+    display: contents;
+}
+
+.contact-address-social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--light-gray);
+    align-items: center;
+}
+
+
+
+
 
 
 @media (max-width: 1024px){
@@ -116,6 +207,9 @@ header{
         padding: 30px
     }
 }
+
+
+
 
 
 @media (max-width: 768px) {
@@ -128,6 +222,9 @@ header{
         margin: 0px 30px 70px 30px;
         gap: 30px;
     }
+    .country-three{
+        margin-bottom: 250px;
+    }
     .img-cont img{
         width: 100%;
         /* height: 70%; */
@@ -135,6 +232,19 @@ header{
     /* .location-text{
         margin: 30px;
     } */
+
+    .floating-talk{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        margin: 0px 0px 70px 0px;
+        margin-top: -230px;
+
+    }
+    .floating-talk h3{
+        margin-bottom: 20px;
+        line-height: 50px;
+    }
 
 }
 
@@ -169,4 +279,43 @@ header{
     /* .text-one{
         padding: 50px 50px 0;
     } */
+
+    .country-three{
+        margin-bottom: 300px;
+    }
+
+    .floating-talk{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        bottom: 83%;
+        padding: 40px;
+        margin: 0px 15px 50px 15px;
+        margin-top: -200px;
+    }
+    footer{
+        padding: 50px 17px 50px 17px;
+
+    }
+    .foothead{
+        flex-direction: column;
+        align-items: center;
+        border-bottom: none;
+        margin-bottom: 30px;
+    }
+    .foot-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .contact-address-social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
 }

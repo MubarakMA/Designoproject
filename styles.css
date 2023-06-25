@@ -426,7 +426,7 @@ footer{
         width: 50%;
     }
     .qualities{
-        margin: 100px 15px 500px 15px;
+        margin: 100px 15px 200px 15px;
     }
     .quali{
         text-align: center;
@@ -439,7 +439,12 @@ footer{
         text-align: center;
         bottom: 83%;
         padding: 40px;
-        margin: 100px 15px 0 15px;
+        margin: 0px 15px 50px 15px;
+        margin-top: -200px;
+    }
+    footer{
+        padding: 50px 17px 50px 17px;
+
     }
     .foothead{
         flex-direction: column;

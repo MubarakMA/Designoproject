@@ -23,6 +23,7 @@
 
 body{
     /* padding: 40px 100px 0 100px; */
+    background-image: url('./contact/contact-bg.png');
     font-family: var(--font-family);
 }
 
@@ -67,7 +68,12 @@ header{
     border-radius: 20px;
     justify-content: center;
     align-items: center;
+    background-image: url('./contact/contact-text-bg.png');
+    background-repeat: no-repeat;
+    background-position: top left;
 }
+/* .contact-text{
+} */
 .contact-text h2{
     font-size: var(--font-size-title);
     margin-bottom: 10px;
